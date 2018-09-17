@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.allow.crazydots.MenuScreen" >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/singleButton"
+        android:onClick="singleButtonClick"
+        android:src="@drawable/single_normal"
+        android:background="@null"
+        android:layout_below="@+id/imageViewCols"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/multiButton"
+        android:onClick="multiButtonClick"
+        android:src="@drawable/multi_normal"
+        android:background="@null"
+        android:layout_below="@+id/singleButton"
+        android:layout_alignLeft="@+id/singleButton"
+        android:layout_alignStart="@+id/singleButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exitButton"
+        android:onClick="exitButtonClick"
+        android:src="@drawable/exit_normal"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/multiButton"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewRows"
+        android:background="@drawable/rows"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dotRowsEdit"
+        android:inputType="number"
+        android:hint="6"
+        android:ems="3"
+        android:layout_toRightOf="@+id/imageViewRows"
+        android:layout_toEndOf="@+id/imageViewRows"
+        android:layout_alignBaseline="@+id/imageViewRows"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewCols"
+        android:background="@drawable/cols"
+        android:layout_below="@+id/imageViewRows"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dotColsEdit"
+        android:inputType="number"
+        android:hint="6"
+        android:ems="3"
+        android:layout_below="@+id/imageViewRows"
+        android:layout_toRightOf="@+id/imageViewCols"
+        android:layout_toEndOf="@+id/imageViewCols"
+        android:layout_alignBaseline="@+id/imageViewCols"/>
+
+</RelativeLayout>

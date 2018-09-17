@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CrazyDots</string>
+    <string name="title_activity_menu_screen">Menu</string>
+    <string name="single_player_button_text">Single Player</string>
+    <string name="multi_player_button_text">Multi Player</string>
+    <string name="exit_button_text">Exit</string>
+    <string name="textview_text">Number of Dots:</string>
+    <string name="finding_service">Finding local services</string>
+    <string name="multiplayer_dialog_numplayers_edit_text">2</string>
+    <string name="multiplayer_dialog_radio_yes_text">Yes</string>
+    <string name="multiplayer_dialog_radio_no_text">No</string>
+    <string name="multiplayer_dialog_p2p_textview_text">Peer to Peer?</string>
+    <string name="multiplayer_dialog_numplayers_textview_text">Number of Players?</string>
+</resources>
